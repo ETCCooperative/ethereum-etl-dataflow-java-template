@@ -1,0 +1,15 @@
+{
+  "name": "Ethereum ETL streaming processor",
+  "description": "Streaming pipeline. Ingests JSON-encoded messages from a Pub/Sub topic and writes them to a pre-existing BigQuery table as BigQuery elements.",
+  "parameters": [
+    {
+      "name": "dataset",
+      "label": "Dataset name",
+      "helpText": "Name used to identify the big query table as in <PROJECT_NAME>:<DATASET>.<TABLE>",
+      "regexes": [
+        "[a-zA-Z0-9_]+"
+      ],
+      "paramType": "TEXT"
+    }
+  ]
+}
